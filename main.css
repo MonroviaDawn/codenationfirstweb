@@ -1,0 +1,278 @@
+
+
+/* ___IMPORTS_____!!!!!!!!!!!!!!!!!________________!!!!!!!!!!!!!!!!!!!!!!______________________!!!!!!!!!!!!!!!!!!______________ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+/* font families etc etc are first imported using the @import link from google.font and called using the labels underneath!! */
+
+/* ___HEADINGS_____!!!!!!!!!!!!!!!!!________________!!!!!!!!!!!!!!!!!!!!!!______________________!!!!!!!!!!!!!!!!!!______________ */
+a:visited, a:link, a:active {
+    text-decoration:none;
+    color: inherit;
+} /* hyperlink decoration */
+
+h1 {
+    /* "font-family: XXXXxxxxXXXx is also copied from website to call the correct font from the import above */
+    display: flex;
+    box-sizing: content-box;
+    justify-content: center;
+    color:crimson;
+    font-size:700%;
+    font-weight:bolder;
+    text-align: center;
+    cursor: progress;
+}
+
+h2 {
+    color:lightskyblue;
+    font-size:400%;
+    font-weight:bolder;
+    text-align:right;
+}
+
+h4 {
+    text-align:left;
+    font-size: 200%;
+    font-weight:lighter;
+    cursor: move;
+}
+
+h6 {
+    text-align: right;
+    font-size: 100%;
+    cursor: move;
+}
+
+/* ___CLASSES_____!!!!!!!!!!!!!!!!!________________!!!!!!!!!!!!!!!!!!!!!!______________________!!!!!!!!!!!!!!!!!!______________ */
+
+.complete-margin{
+    box-sizing: border-box;
+    background-color: darksalmon;
+    margin: 20% 10% 20% 10%;
+    padding: 5% 25% 5%;
+}
+/* .div {
+    display: flex;s
+    align-items: center;
+} */
+
+.footer
+    {font-weight: lighter;
+    cursor: move;
+}
+
+.title
+    {object-position: center;
+}
+
+.cursor-crosshair       
+    { cursor: crosshair;
+}
+.cursor-progress
+    { cursor: progress; 
+}
+
+.complete-font{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.greet{
+    display:flex;
+    justify-content: center;
+    color: darkred;
+    text-align: center;
+}
+
+.image_hover{
+    cursor: crosshair;
+}
+
+.navbar1{
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    justify-content:space-around;
+}
+
+.navbar2{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-around;
+    justify-items: center;
+    cursor: crosshair;
+}
+
+/* paragrahp styles */
+.p1{
+    box-sizing: content-box;
+    padding: 10% 25% 50%;
+    margin: auto;
+    font-weight: lighter;
+    font-size:80%;
+}
+
+.p2{
+    box-sizing: border-box;
+    padding: 25% 25% 15%;
+    font-weight:bolder;
+    font-size:250%;
+}
+.p2 img{
+    display:flex;
+    align-items: center;
+}
+
+.gallery-content{
+    position:sticky;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.0);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 100px,20px,0px;
+}
+
+.gallery-text{
+    position:sticky;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.0);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+/* ------------------------------responsive grids-----------------------------------*/
+.gridrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+  /* four equal columns that sits next to each other */
+.gridcolumn {
+    flex: 25%;
+    max-width: 40%;
+    padding: 10%;
+    justify-content: space-around;
+}
+
+.gridcolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+  /* Responsive layout - two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.gridcolumn {
+    flex:40%;
+    max-width: 25%;
+}
+
+  /* Responsive layout - two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.gridcolumn {
+    flex: 100%;
+    max-width: 100%;
+}
+
+
+/* -------------shop grid--------------- */
+.shoprow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+  /* four equal columns that sits next to each other */
+.shopcolumn {
+    flex: 25%;
+    max-width: 40%;
+    padding: 10%;
+    justify-content: space-around;
+}
+
+.shopcolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+  /* Responsive layout - two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .shopcolumn {
+    flex:40%;
+    max-width: 25%;
+}
+
+  /* Responsive layout - two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.shopcolumn {
+    flex: 100%;
+    max-width: 100%;
+}
+/* 
+#donda1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width:100%;
+    min-height:100%;
+} */
+
+.img-row{
+    flex: 25%;
+    max-width: 40%;
+    padding: 10%;
+    justify-content: space-around;
+}
+
+/* #anwap{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    right: 0;
+    bottom: 0;
+    min-width:100%;
+    min-height:100%;
+} */
+.background1{
+    background-image: url("/images/JWbodies1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* display: flex;
+    justify-content: center;
+    margin: 5% 10% 10%;
+    box-sizing: border-box;
+    color: aqua;
+    margin: 30% 30% 30%;
+    cursor:crosshair; */
+}
+
+.button{
+    background-color: crimson;
+    border: none;
+    color:cornflowerblue;
+    text-align: center;
+    padding:10%;
+    transition-duration: 0.2s;
+}
+
+.button:hover{
+    background-color: none;
+    border: none;
+    color:cornflowerblue;
+    text-align: center;
+    padding:10%;
+}
+
+.imgbox img{
+    background-attachment: fixed;
+}
+
+
